@@ -40,6 +40,7 @@ AI_API_KEY=your_gemini_api_key_here
 ```
 
 For the full local development workflow, see [Local Development](docs/LOCAL_DEVELOPMENT.md).
+Contribution and pull request guidelines are available in [Contributing](docs/CONTRIBUTING.md).
 
 ### 3. Database Seed & Start
 ```bash
