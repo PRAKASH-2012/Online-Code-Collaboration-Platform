@@ -39,16 +39,18 @@ JWT_SECRET=codesync_ai_super_secret_jwt_key_2026_black_and_gold
 AI_API_KEY=your_gemini_api_key_here
 ```
 
+For the full local development workflow, see [Local Development](docs/LOCAL_DEVELOPMENT.md).
+
 ### 3. Database Seed & Start
 ```bash
 # Seed realistic demo data (Prakash, Arun, Kumar, Meena)
 npm run seed
 
-# Launch full-stack platform (Express Backend + Vite Frontend)
-npm run dev
+# Launch the combined production-style app (Express serves the built frontend)
+npm run full
 ```
 
-Visit **`http://localhost:5173`** in your browser.
+Visit **`http://localhost:5000`** in your browser. The IDE is available at **`http://localhost:5000/ide`**.
 
 ---
 
