@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #050505;
+    color: #F3F4F6;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Golden Ambient Background Glow & Micro Grid */
+.bg-gold-grid {
+  background-image: 
+    linear-gradient(to right, rgba(42, 37, 24, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(42, 37, 24, 0.25) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.gold-radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.12) 0%, rgba(5, 5, 5, 0) 70%);
+}
+
+.gold-glass {
+  background: rgba(13, 13, 13, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.gold-glass-hover:hover {
+  border-color: rgba(245, 197, 66, 0.6);
+  box-shadow: 0 0 20px -3px rgba(212, 175, 55, 0.25);
+}
+
+/* Monaco Dark Gold Overrides */
+.monaco-editor, .monaco-editor .margin, .monaco-editor-background {
+  background-color: #050505 !important;
+}
+
+/* Pulse animation for active speaker audio huddle */
+@keyframes goldPulse {
+  0% { box-shadow: 0 0 0 0 rgba(245, 197, 66, 0.6); }
+  70% { box-shadow: 0 0 0 10px rgba(245, 197, 66, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(245, 197, 66, 0); }
+}
+
+.animate-gold-pulse {
+  animation: goldPulse 1.8s infinite;
+}
