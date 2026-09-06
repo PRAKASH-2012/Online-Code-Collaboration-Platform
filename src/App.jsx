@@ -19,7 +19,7 @@ import { UserProfileSettingsPage } from './pages/UserProfileSettingsPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Online-Code-Collaboration-Platform">
       <AuthProvider>
         <ThemeContextWrapper>
           <SocketProvider>
